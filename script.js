@@ -2,16 +2,12 @@ $(document).ready(function() {
 
     $('.start').click(function() {
         if (!$('.start').hasClass('activeStart')) {
-            $('.start').addClass('activeStart');
-            
+            $('.start').addClass('activeStart'); 
         }else {
             $('.start').removeClass('activeStart');
             $('.start').addClass('pausedStart');
-            
         }
-
     });    
-
 });
 
 const timer = {
@@ -58,16 +54,8 @@ const timer = {
   $('.start').on('click', () => {
     if (timer.running) {
       timer.pause();
-    //   startPauseButton.textContent = 'Resume';
     } else {
       timer.start();
-    //   startPauseButton.textContent = 'Pause';
     }
   });
   
-  // Reset button click event handler
-//   const resetButton = document.getElementById('resetButton');
-//   resetButton.addEventListener('click', () => {
-//     timer.reset();
-//     startPauseButton.textContent = 'Start';
-//   });
